@@ -2,6 +2,7 @@ import socket
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import signal
+import os
 
 # Define global variables to hold the results
 tcp_results = []
@@ -10,8 +11,8 @@ udp_results = []
 def signal_handler(signal, frame):
     print("\nScan interrupted, printing results...")
     print_results()
-    exit(0)
-
+    os._exit(0)
+    
 signal.signal(signal.SIGINT, signal_handler)
 
 def print_results():
